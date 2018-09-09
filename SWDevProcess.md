@@ -30,6 +30,10 @@ Created Mar. 19, 2018 by 이윤준
 
 	-	code review는 외주 개발자 1인과 내부 개발자 1인이 수행하며 그 내용은 ??에 기술
 
+-	학사 서비스 영문: School_Affairs
+
+	-	학적 : Academic_Registra
+
 ---
 
 -	[The Best of the Best Practices (BOBP) Guide for Python](https://gist.github.com/sloria/7001839)
