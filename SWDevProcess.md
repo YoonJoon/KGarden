@@ -30,13 +30,35 @@ Created Mar. 19, 2018 by 이윤준
 
 	-	code review는 외주 개발자 1인과 내부 개발자 1인이 수행하며 그 내용은 ??에 기술
 
-### Service 와 Module 명과 영문명
+---
 
-#### Lilac Service System (학사서비스시스템)
+### K-Garden Service 와 Module 명과 영문명
 
--	학사 서비스 영문: School_Affairs
+#### Lilac
 
-	-	학적 : Academic_Registra
+학사 서비스 시스템
+
+영문: Academic_Affairs
+
+-	학적 : Academic_Registra
+
+#### Calla
+
+연구 지원 서비스 시스템
+
+영문: Research_Affairs
+
+#### Lavender
+
+일반 행정 서비스 시스템
+
+영문: General_Affairs
+
+-	인사 : Human_Resource_Management
+
+#### Vervena
+
+인프라 서비스 시스템
 
 ---
 
