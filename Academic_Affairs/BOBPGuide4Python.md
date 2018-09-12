@@ -287,4 +287,8 @@ class TestAUser(unittest.TestCase):
 -	[PEP 20 (The Zen of Python)](http://www.python.org/dev/peps/pep-0020/)
 -	[PEP 8 (Style Guide for Python)](PEP8Tutorial.md)
 -	[The Hitchiker's Guide to Python](http://docs.python-guide.org/en/latest/)
--	Khan Academy Development Docs Python Best Practice Patterns Pythonic Sensibilities The Pragmatic Programmer
+-	[Khan Academy Development Docs](https://sites.google.com/a/khanacademy.org/forge/for-developers)
+- [Python Best Practice Patterns](http://youtu.be/GZNUfkVIHAY)
+- [Pythonic Sensibilities](http://www.nilunder.com/blog/2013/08/03/pythonic-sensibilities/)
+- [실용주의 프로그래머 ](http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X/ref=sr_1_1?ie=UTF8&qid=1381886835&sr=8-1&keywords=pragmatic+programmer)
+- 및 기타 많은 지침서들이 있습니다.
