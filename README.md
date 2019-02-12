@@ -1,4 +1,4 @@
-# KGardenDevProcessStandard
+# KGarden (KAIST 대학정보화사업)
 
-KGarden Project의 SW Development Process와 각종 Standard를 정의합니다.
+사업에 필요한 Document와 Process를 정의하였습니다.
 
