@@ -23,7 +23,7 @@
 
 ### 자습
 
-![](underConstruction.jpg)
+![](Pics/underConstruction.jpg)
 
 ### 보다 자세한 설명
 
@@ -112,11 +112,11 @@
 
 다음은 고급 텍스트 편집기의 스크린 샷입니다.
 
-![](notepadPlusPlus.png)
+![](Pics/notepadPlusPlus.png)
 
 다음은 온라인 텍스트 편집기의 스크린 샷입니다.
 
-![](shiftedit.png)
+![](Pics/shiftedit.png)
 
 #### 웹서버에 파일 업로드
 
@@ -161,19 +161,19 @@
 
 이미 알고 있듯이 웹 사이트를 보려면 웹 브라우저가 필요합니다. 개인 용도로 사용할 수 있는 브라우저는 [수십 가지](http://en.wikipedia.org/wiki/List_of_web_browsers)가 있지만 웹 사이트를 개발할 때 최소한 다음 주요 브라우저에서 테스트하여 사이트가 대부분의 사람들에게 잘 작동하는지 확인해야 합니다.
 
-- [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
-- [Google Chrome](https://www.google.fr/chrome/browser/)
-- [Microsoft Internet Explorer](http://windows.microsoft.com/en-US/internet-explorer/download-ie)
-- [Apple Safari](http://www.apple.com/safari/)
+-	[Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
+-	[Google Chrome](https://www.google.fr/chrome/browser/)
+-	[Microsoft Internet Explorer](http://windows.microsoft.com/en-US/internet-explorer/download-ie)
+-	[Apple Safari](http://www.apple.com/safari/)
 
 기술 플랫폼 또는 국가와 같이 특정 그룹이 사용자인 경우 [Opera](http://www.opera.com/), [Konqueror](http://www.konqueror.org/) 또는 [UC Browser](http://www.ucweb.com/ucbrowser/)와 같은 추가 브라우저로 사이트를 테스트해야 할 수도 있습니다.
 
 그러나 일부 브라우저는 특정 운영 체제에서만 실행되기 때문에 테스트가 복잡해집니다. Apple Safari는 iOS 및 Mac OS에서 실행되는 반면 Internet Explorer는 Windows에서만 실행됩니다. [Browsershots](http://browsershots.org/) 또는 [Browserstack](http://www.browserstack.com/)과 같은 서비스를 이용하는 것이 가장 좋습니다. Browsershots는 다양한 브라우저에서 볼 수 있도록 웹 사이트의 스크린 샷을 제공합니다. Browserstack은 실제로 가상 머신에 대한 완벽한 원격 액세스를 제공하므로 가장 일반적인 환경에서 사이트를 테스트 할 수 있습니다. 또는 자체 가상 머신을 설정할 수도 있지만 전문 지식이 필요합니다. (만약 당신이 그렇게 하고 있다면, 마이크로소프트는 [modern.ie](https://modern.ie/)에서 사용 가능한 가상 머신을 포함한 개발 도구를 제공합니다.)
 
-모든 방법을 동원하여 실제 장치에서 몇 가지 테스트를 수행하십시오.  특히 실제 모바일 장치의 경우 그렇습니다. 모바일 장치 시뮬레이션은 새롭고 진화하는 기술이어서 데스크톱 시뮬레이션보다 안정성이 떨어집니다. 물론 휴대 기기는 돈이 들기 때문에 [Open Device Lab 이니셔티브](http://opendevicelab.com/)를 살펴 볼 것을 제안합니다. 많은 지출없이 많은 플랫폼에서 테스트하려 할떄 장치를 공유 할 수도 있습니다.
+모든 방법을 동원하여 실제 장치에서 몇 가지 테스트를 수행하십시오. 특히 실제 모바일 장치의 경우 그렇습니다. 모바일 장치 시뮬레이션은 새롭고 진화하는 기술이어서 데스크톱 시뮬레이션보다 안정성이 떨어집니다. 물론 휴대 기기는 돈이 들기 때문에 [Open Device Lab 이니셔티브](http://opendevicelab.com/)를 살펴 볼 것을 제안합니다. 많은 지출없이 많은 플랫폼에서 테스트하려 할떄 장치를 공유 할 수도 있습니다.
 
 ### 다음 단계
 
-- 이 소프트웨어 중 일부는 무료이지만 모두는 아닙니다. [웹에서 응용을 수행하는데 필요한 비용](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_much_does_it_cost)을 알아보십시오.
-- 텍스트 편집기에 대해 자세히 알기 원하면 [텍스트 편집기를 선택하고 설치하는 방법](https://developer.mozilla.org/en-US/docs/Learn/Choose,_Install_and_set_up_a_text_editor)에 대한 페이지를 보십시오.
-- 웹에 웹 사이트를 게시하는 방법에 대해 궁금한 점이 있다면 ["웹 서버에 파일을 업로드하는 방법"](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Upload_files_to_a_web_server)을 살펴보십시오.
+-	이 소프트웨어 중 일부는 무료이지만 모두는 아닙니다. [웹에서 응용을 수행하는데 필요한 비용](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_much_does_it_cost)을 알아보십시오.
+-	텍스트 편집기에 대해 자세히 알기 원하면 [텍스트 편집기를 선택하고 설치하는 방법](https://developer.mozilla.org/en-US/docs/Learn/Choose,_Install_and_set_up_a_text_editor)에 대한 페이지를 보십시오.
+-	웹에 웹 사이트를 게시하는 방법에 대해 궁금한 점이 있다면 ["웹 서버에 파일을 업로드하는 방법"](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Upload_files_to_a_web_server)을 살펴보십시오.

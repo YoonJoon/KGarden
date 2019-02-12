@@ -33,7 +33,7 @@ MDN 초급 서버사이드 프로그래밍 과정에 오신 것을 환영합니�
 
 서버는 파일 시스템에서 요청된 문서를 검색하여 문서와 [성공 상태](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#Successful_responses)(보통 200 OK)를 포함하는 HTTP 응답을 반환합니다. 어떤 이유든 파일을 찾을 수 없으면 오류 상태를 반환합니다 ([클라이언트 오류 응답](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#Client_error_responses) 및 [서버 오류 응답](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#Server_error_responses) 참조).
 
-![](Basic_Static_App_Server.png)
+![](Pics/Basic_Static_App_Server.png)
 
 #### 동적 사이트
 
@@ -47,7 +47,7 @@ MDN 초급 서버사이드 프로그래밍 과정에 오신 것을 환영합니�
 
 <i>정적</i> 리소스를 요청하면 정적 사이트와 동일한 방식으로 요청을 처리합니다 (정적 리소스는 일반적으로 CSS, JavaScript, 이미지, 미리 만든 PDF 파일 등과 같이 변경되지 않는 파일입니다).
 
-![](Web_Application_with_HTML_and_Steps.png)
+![](Pics/Web_Application_with_HTML_and_Steps.png)
 
 대신 동적 리소스에 대한 요청은 서버사이드 코드(그림에서 "web Application"으로 표시)로 전달됩니다(2). "동적 요청"의 경우 서버는 요청을 해석하여 데이터베이스에서 필요한 정보를 읽고(3) 검색된 데이터를 HTML 템플릿과 결합한 다음(4) 생성한 HTML(5,6)을 포함하는 응답을 반환합니다.
 

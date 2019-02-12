@@ -179,7 +179,7 @@ Content-Length: 0
 
 [마지막 페이지](introServer.md)의 정적 사이트 아키텍처 다이어그램을 다시 살펴봄으로써 어떻게 작동하는지 다시 한번 살펴 보겠습니다.
 
-![](Basic_Static_App_Server.png)
+![](Pics/Basic_Static_App_Server.png)
 
 사용자가 페이지를 탐색하려고 하면 브라우저는 해당 HTML 페이지의 URL을 지정하여 HTTP <code>GET</code> 요청을 보냅니다. 서버는 요청된 문서를 파일 시스템에서 검색하여, (성공을 나타내는) "<code>200 OK</code>"의 [HTTP 응답 상태 코드](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)와 문서를 포함하는 HTTP 응답을 반환합니다. 서버는 다른 상태 코드(예: 서버에 파일이 없으면 "<code>404 Not Found</code>", 파일이 있지만 다른 위치로 이동한 경우 "<code>301 Moved Permanently</code>")를 반환 할 수 있습니다.
 
@@ -201,7 +201,7 @@ Content-Length: 0
 
 아래 그림은 "팀 코치" 웹 사이트의 주요 구성 요소와 코치가 "최고의 팀"목록을 접근할 때 일련의 작업 순서에 대한 번호를 매긴 레이블을 보여 줍니다. (HTTP 요청을 처리하고 HTTP 응답을 반환하는 서버사이드 코드를 연결하는 방법 보여 주는)웹 응용 프로그램, 플레이어, 팀, 코치 및 그들간의 관계를 저장하고 있는 데이터베이스 및 HTML 템플리트로 사이트를 동적으로 생성하는 부분이 이루어져 있습니다.
 
-![](Web_Application_with_HTML_and_Steps.png)
+![](Pics/Web_Application_with_HTML_and_Steps.png)
 
 코치가 양식에 팀 이름과 선수 수를 입력하여 제출하면 작업 순서는 다음과 같습니다.
 

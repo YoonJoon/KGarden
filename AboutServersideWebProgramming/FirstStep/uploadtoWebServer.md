@@ -21,7 +21,7 @@
 
 FileZilla 응용 프로그램을 실행하면 아래과 같은 화면이 보입니다.
 
-![](filezilla-ui.png)
+![](Pics/filezilla-ui.png)
 
 #### 로그인
 
@@ -53,7 +53,7 @@ To publish to this account, please connect through SFTP with the following crede
 
 먼저 <code>http://demozilla.examplehostingprovider.net/</code>을 보겠습니다. 아래와 같이 아직 아무 것도 없습니다.
 
-![](demozilla-empty.png)
+![](Pics/demozilla-empty.png)
 
 > **Note** : 호스팅 업체에 따라 웹 주소로 처음 이동할 때 "이 웹 사이트는 [호스팅 서비스]에 의해 호스팅됩니다."와 같은 메시지가 표시되기도 합니다.
 
@@ -67,7 +67,7 @@ SFTP 클라이언트를 원격 서버에 연결하기 위하여 다음 단계를
 
 위의 단계를 수행하면 아래과 같이 보일 것입니다.
 
-![](site-manager.png)
+![](Pics/site-manager.png)
 
 이제 <i>Connect</i>를 눌러 SFTP 서버에 연결하십시오.
 
@@ -77,7 +77,7 @@ SFTP 클라이언트를 원격 서버에 연결하기 위하여 다음 단계를
 
 연결되면 다음과 같은 화면이 나타납니다 (설명를 위해 위의 예를 계속하여 사용).
 
-![](connected.png)
+![](Pics/connected.png)
 
 윗 화면에 대하여 살펴봅니다.
 
@@ -95,7 +95,7 @@ SFTP 클라이언트를 원격 서버에 연결하기 위하여 다음 단계를
 
 여기까지 무사히 따라 하였지만 브라우저에서 볼 수 있을까요? 브라우저에서 웹 사이트 (예 : <code>http://demozilla.examplehostingprovider.net/</code>)로 가서 확인할 수 있습니다.
 
-![](here-we-go.png)
+![](Pics/here-we-go.png)
 
 와! 웹 사이트가 작동합니다.
 
