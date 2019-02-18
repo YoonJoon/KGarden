@@ -67,7 +67,7 @@
 
 서버와 클라이언트 모두 이전 통신을 기억하지 않습니다. 예를 들어, HTTP만으로 서버는 입력한 암호나 수행중인 트랜잭션의 실행 단계를 기억할 수 없습니다. 그런 작업을 위해서는 응용 프로그램 서버가 필요합니다. (다른 페이지에서 그런 종류의 기술을 다루겠습니다.)
 
-HTTP는 클라이언트와 서버가 통신하는 방법에 대하여 명확한 규칙을 제공합니다. [다른 패이지](https://developer.mozilla.org/en-US/docs/Web/HTTP)에서 HTTP 자체에 대해 다룰 것입니다. 지금 다음 사항에 유의하십시오.
+HTTP는 클라이언트와 서버가 통신하는 방법에 대하여 명확한 규칙을 제공합니다. [다른 페이지](https://developer.mozilla.org/en-US/docs/Web/HTTP)에서 HTTP 자체에 대해 다룰 것입니다. 지금 다음 사항에 유의하십시오.
 
 -	클라이언트만 HTTP 요청할 수 있으며 서버로만 보낼 수 있습니다. 서버는 클라이언트의 HTTP 요청에만 응답할 수 있습니다.
 -	HTTP를 통해 파일을 요청할 때 클라이언트는 파일의 URL을 보내야 합니다.
@@ -93,8 +93,8 @@ HTTP는 클라이언트와 서버가 통신하는 방법에 대하여 명확한 
 
 ### 다음 단계
 
-이제 웹서버에 익숙해졌습니다. 아래 사항들애 대하여 알아봅니다.
+이제 웹 서버에 익숙해졌습니다. 아래 사항들애 대하여 알아봅니다.
 
--	[웹에서 응용을 수행하는데 필요한 비용](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_much_does_it_cost)
+-	[웹에서 응용을 수행하는데 필요한 비용](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_much_does_it_cost) <img src="Pics/underConstruction.jpg" width="50" height="50" />
 -	[웹 사이트 구축에 필요한 다양한 소프트웨어](whatSoftwareNeeded.md)
--	[웹서버에 파일을 업로드하는 방법](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Upload_files_to_a_web_server)과 같은 실용적인 기술
+-	[웹서버에 파일을 업로드하는 방법](uploadtoWebServer.md)과 같은 실용적인 기술
