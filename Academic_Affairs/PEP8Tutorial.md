@@ -1,11 +1,22 @@
 Python 코딩 표준 PEP-8 훌터보기
 -------------------------------
 
-여러분이 작성하는 Python program의 가독성을 올리기 위하여 code를 정확하게 포맷팅할 수 있는 Python style 지침 PEP-8에 대하여 빠르고 쉽게 배울 수 있도록 [PEP-8 Tutorial: Code Standard in Python](https://www.datacamp.com/community/tutorials/pep8-tutorial-python-code)를 번역하였습니다.
+여러분이 작성하는 Python program의 가독성을 올리기 위하여 code를 정확하게 포맷팅할 수 있는 Python style 지침 PEP-8에 대하여 빠르고 쉽게 배울 수 있도록 [PEP-8 Tutorial: Code Standard in Python](https://www.datacamp.com/community/tutorials/pep8-tutorial-python-code)를 번역하였다.
 
-PEP(Python Enhancement Proposal)-8은 Python code를 보다 체계적이고 읽기 쉽게 작성할 수 있도록 주요 사항을 기술한다. Python를 만든 Guido Van Rossum은 "code는 작성하는 것 보다 훨씬 많이 읽힌다"고 하였다.
+PEP(Python Enhancement Proposal)-8은 Python code를 보다 읽기 쉽고 체계적으로 작성하는데 필요한 사항을 기술하고 있다. Python 창시자인 Guido Van Rossum은 "code는 작성하는 것 보다 훨씬 많이 읽힌다"고 하였다.
 
-이 글은 code 예를 들어가며 PEP-8를 설명하며 다음 토픽을 다룰 것이다.* 먼저 PEP-8이 무엇이며 왜 필요한 가에 대하여 [소개](#intro)한다.* 다음, 프로그래머들이 많은 관심을 보이고 있는 [들여쓰기(indentation)](#indent)을 다룬다. 탭(tab) 또는 빈칸(space)중 무엇을 사용하여야 하느지에 대한 답을 구할 수 있을 것이다.* 바라지 않을 수도 있겠지만, 최대 라인 수[(maximum line length)](#maxlinelength)에 대한 가이드라인(guideline)도 있다.* 또한, 빈줄(blank line)을 다루는 방법을 제안한다.* 그리고 [식(expression)과 문장(statement)에 있는 빈칸(whitespace)](#whitespace)는 초보자도 쉽게 사용요할 수 있다.* Python으로 프로그래밍을 할 떄 인코딩이 무엇이며 왜 필요할까? Python3에서 디폴트(default)은 무엇인가 [소스 라인 인코딩 (source line encoding)](#sourceline)에서 이들을 설명한다.* 코딩할 때 [import문](#import)은 자주 사용된다. import문의 순서, 절대(absolute)와 상대(relative) import문, 그리고 와일드카드(wildcard) import 등에 대하여 다룰 것이다.* 문서화(documentaton)는 응용의 기능 추적과 최종 산출물의 전체적인 품질 향상에 필수이다. 이를 위하여 [주석(comment)](#comment)은 매우 중요하다.
+이 글에서는 code 예를 들어가며 PEP-8를 설명하며 아래의 토픽을 다룰 것이다.
+
+* 먼저 PEP-8이 무엇이며 왜 필요한 가에 대하여 [소개](#intro)한다.
+* 다음, 프로그래머들이 많은 관심을 보이고 있는 [들여쓰기(indentation)](#indent)을 다룬다. 탭(tab) 또는 빈칸(space)중 무엇을 사용하여야 하는지 그 답을 구할 수 있을 것이다.
+* 무시해도 되지만, 최대 라인 수[(maximum line length)](#maxlinelength)에 대한 가이드 라인(guide line)도 있다.
+* 또한, 빈줄(blank line)을 다루는 방법도 제안한다.
+* 그리고 [식(expression)과 문장(statement)에 있는 빈칸(whitespace)](#whitespace)에 대한 사용을 초보자도 쉽게 적용할 수 있다.
+* Python으로 프로그래밍을 할 떄 인코딩이 무엇이며 왜 필요할까? Python3에서 디폴트(default)는 무엇인가 [소스 라인 인코딩 (source line encoding)](#sourceline)에서 이들을 설명한다.
+* 코딩할 때 [import문](#import)은 자주 사용된다. import문의 순서, 절대(absolute)와 상대(relative) import문, 그리고 와일드카드(wildcard) import 등에 대하여도 설명할 것이다.
+* 문서화(documentaton)는 응용의 기능 추적과 최종 산출물의 전체적인 품질 향상에 필수이다. 이를 위하여 [주석(comment)](#comment)은 매우 중요하다.
+* 다음, 프로그래머들이 많은 관심을 보이고 있는 [들여쓰기(indentation)](#indent)을 다룬다. 탭(tab) 또는 빈칸(space)중 무엇을 사용하여야 하는지 그 답을 구할 수 있을 것이다.* 바라지 않을 수도 있겠지만, 최대 라인 수[(maximum line length)](#maxlinelength)에 대한 가이드라인(guideline)도 있다.* 또한, 빈줄(blank line)을 다루는 방법을 제안한다.* 그리고 [식(expression)과 문장(statement)에 있는 빈칸(whitespace)](#whitespace)는 초보자도 쉽게 사용요할 수 있다.* Python으로 프로그래밍을 할 떄 인코딩이 무엇이며 왜 필요할까? Python3에서 디폴트(default)은 무엇인가 [소스 라인 인코딩 (source line encoding)](#sourceline)에서 이들을 설명한다.* 코딩할 때 [import문](#import)은 자주 사용된다. import문의 순서, 절대(absolute)와 상대(relative) import문, 그리고 와일드카드(wildcard) import 등에 대하여 다룰 것이다.* 문서화(documentaton)는 응용의 기능 추적과 최종 산출물의 전체적인 품질 향상에 필수이다. 이를 위하여 [주석(comment)](#comment)은 매우 중요하다.
+이 글에서는 code 예를 들어가며 PEP-8를 설명하며 아래의 토픽을 다룰 것이다.* 먼저 PEP-8이 무엇이며 왜 필요한 가에 대하여 [소개](#intro)한다.* 다음, 프로그래머들이 많은 관심을 보이고 있는 [들여쓰기(indentation)](#indent)을 다룬다. 탭(tab) 또는 빈칸(space)중 무엇을 사용하여야 하느지에 대한 답을 구할 수 있을 것이다.* 바라지 않을 수도 있겠지만, 최대 라인 수[(maximum line length)](#maxlinelength)에 대한 가이드라인(guideline)도 있다.* 또한, 빈줄(blank line)을 다루는 방법을 제안한다.* 그리고 [식(expression)과 문장(statement)에 있는 빈칸(whitespace)](#whitespace)는 초보자도 쉽게 사용요할 수 있다.* Python으로 프로그래밍을 할 떄 인코딩이 무엇이며 왜 필요할까? Python3에서 디폴트(default)은 무엇인가 [소스 라인 인코딩 (source line encoding)](#sourceline)에서 이들을 설명한다.* 코딩할 때 [import문](#import)은 자주 사용된다. import문의 순서, 절대(absolute)와 상대(relative) import문, 그리고 와일드카드(wildcard) import 등에 대하여 다룰 것이다.* 문서화(documentaton)는 응용의 기능 추적과 최종 산출물의 전체적인 품질 향상에 필수이다. 이를 위하여 [주석(comment)](#comment)은 매우 중요하다.
 
 <a name="intro"></a>
 
