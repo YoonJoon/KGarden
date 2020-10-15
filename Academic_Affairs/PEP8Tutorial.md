@@ -507,14 +507,24 @@ import sys
 
 Python 프로그램에서 변수, 소스 코드와 문서에 있는 타입, 함수와 다른 엔터티들을 표기하는 식별자(identifier)로 사용하는 글자열(character sequence)를 만드는 규칙, 즉 명명 규칙을 대부분 이용한다.
 
-특별한 명명 스타일을 규정하지 않았다면 아래와 같이 기술한 것을 고려해 보자. 
+특별한 명명 스타일을 규정하지 않았다면 아래와 같은 규칙을 고려해 보자. 
 
 - b 또는 소문자 한 글자 - B 또는 대문자 한 글자 
-- lowercase - UPPERCASE - lower*case_with_underscore - UPPER_CASE_WITH_UNDERSCORE - CapWords, CamelCase 또는 StudlyCaps로 알려진 CapitalizedWords - mixedCase - Capitalized_Words_With_Underscores - \_single\_leading\_underscore: 약한(weak) "내부 사용(internal use)" 지시자. 예를 들면, <code>from M import \*</code>는 밑줄 글자로 시작하는 이름의 객체는 import하지 않는다. - single\_trailing\_underscore*: <code> Tkinter.Toplevel(master, class*='ClassName')</code>처럼 Python 키워드(keyword)와 충돌을 피하기 위한 규칙으로 사용한다. - *\_double\_leading\_underscore: 클래스 애트리뷰트(attribute)를 명명할때, 이름 맹글링(mangling)을 한다 (클래스 <code>FooBar</code>, <code>\_\_boo</code>는 <code>\_FooBar\_\_boo</code>가 된다). - \_\_double\_leading\_and\_trailing\_underscore: 사용자가 관장하는 namespace에 존재하는 <code>\_\_init\_\_</code>, <code>\_\_import\_\_</code> 또는 <code>\_\_file\_\_</code>와 같은 "magic" 객체 또는 애트리뷰트. 이같은 이름은 사용하지 말아야 하며 오직 문서화에서만 사용하여야 한다.
+- lowercase 
+- UPPERCASE 
+- lower*case_with_underscore 
+- UPPER_CASE_WITH_UNDERSCORE 
+- CapWords, CamelCase 또는 StudlyCaps로 알려진 CapitalizedWords 
+- mixedCase 
+- Capitalized_Words_With_Underscores 
+- \_single\_leading\_underscore: 약한(weak) "내부 사용(internal use)" 지시자. 예를 들면, <code>from M import \*</code>는 밑줄 글자로 시작하는 이름의 객체는 import하지 않는다. 
+- single\_trailing\_underscore*: <code> Tkinter.Toplevel(master, class*='ClassName')</code>처럼 Python 키워드(keyword)와 충돌을 피하기 위한 규칙으로 사용한다. 
+- *\_double\_leading\_underscore: 클래스 애트리뷰트(attribute)를 명명할때, 이름 맹글링(mangling)을 한다 (클래스 <code>FooBar</code>, <code>\_\_boo</code>는 <code>\_FooBar\_\_boo</code>가 된다). 
+- \_\_double\_leading\_and\_trailing\_underscore: 사용자가 관장하는 namespace에 존재하는 <code>\_\_init\_\_</code>, <code>\_\_import\_\_</code> 또는 <code>\_\_file\_\_</code>와 같은 "magic" 객체 또는 애트리뷰트. 이같은 이름은 사용하지 말아야 하며 오직 문서화에서만 사용하여야 한다.
 
 #### 통산적인 명명 규칙 (General Naming Conventions)
 
-아래 테이블은 식별자를 몀명하는 방법에 대한 통상적인 지침이다.
+아래 테이블은 식별자를 명명하는 통상적인 지침이다.
 
 | 식별자          | 관례      |
 |-----------------|-----------|
@@ -526,16 +536,16 @@ Python 프로그램에서 변수, 소스 코드와 문서에 있는 타입, 함�
 | 상수 (Constant) | UPPERCASE |
 | 패키지          | lowercase |
 
--	한 글자 변수명에는 '1', 'O', 'l'은 사용하지 않는다. 이 글자들은 어떤 폰트에서 영(0)또는 (1)과 비슷하게 보이기 때문이다.
--	일반적으로 가능하다면 짧은 이름을 사용하는 것이 좋다. 어떤 경우에는 밑줄 글자 사용이 가독성을 향샹시키기도 한다.
+- 한 글자 변수명으로 '1', 'O', 'l'을 사용하지 않는다. 이 글자들은 어떤 폰트에서 영(0)또는 (1)과 비슷하게 보이기 때문이다.
+- 일반적으로 가능하다면 짧은 이름을 사용하는 것이 좋다. 어떤 경우에는 밑줄 글자 사용이 가독성을 향샹시키기도 한다.
 
 <a name="compilant"></a>
 
-### PEP-8 검증? (PEP-8 Compilant?)
+### PEP-8 준수
 
-PEP-8에 대하여 알고 난 다음에는 아마 작성한 코드가 지침 준수의 검증에 의문을 갖을 것이다 (그리고 아직 설명하지 못한 부분이 많다).
+PEP-8에 대하여 알고 난 다음에는 아마 작성한 코드가 지침을 준수하는 가에 대한 의문을 갖을 것이다 (그리고 아직 설명하지 못한 부분이 많다).
 
-PEP-8에 대하여 알아보는 것에 앞서 간단한 <code>pep8</code> 모듈, <code>coala</code> 패키지 그리고 다음 절에서 소개할 다른 도구를 살펴 보아야 한다.
+PEP-8에 대하여 알아보는 것에 앞서 간단한 <code>pep8</code> 모듈, <code>coala</code> 패키지 그리고 다음 절에서 소개할 다른 도구를 살펴 보려고 한다.
 
 #### Python <code>pep8</code> 패키지
 
@@ -596,7 +606,7 @@ $ pep8 --statistics -qq Python-2.5/Lib
 
 #### <code>coala</code>를 이용한 코드 분석
 
-여기에서는 Python 프로그래밍에 더 관심이 있을 지라도 <code>coala</code>는 모든 프로그래밍에 대하여 린팅(linting)과 수정을 지원한다. <code>pip</code>를 이용하여 <code>coala</code>를 설치할 수 있다.
+여기에서는 Python 프로그래밍에 더 많은 관심을 갖고 있지만, <code>coala</code>는 모든 프로그래밍 언어에 대하여 린팅(linting)과 수정을 지원한다. <code>pip</code>를 이용하여 <code>coala</code>를 설치할 수 있다.
 
 ```
 $ pip3 install coala-bears
@@ -615,11 +625,11 @@ Executing section python...
 
 #### pep8online: 온라인으로 Python 코드 검사
 
-간편한 <code>pep8</code> 모듈과 <code>coala</code> 패키지에 [pep8online](http://pep8online.com/)에서 작성한 Python 코드의 PEP-8 준수 여부를 검사할 수 있다. 이 사이트는 작성한 코드를 복사하여 "Check code" 버튼이 있는 편집기를 제공한다. 결과로 개선이 필요한 피드백을 보여준다. 매우 편리하다!
+간편한 <code>pep8</code> 모듈과 <code>coala</code> 패키지에 [pep8online](http://pep8online.com/)에서 작성한 Python 코드의 PEP-8 준수 여부를 검사할 수 있다. 이 사이트에 작성한 코드를 복사하여 "Check code" 버튼이 있는 편집기에 입력한다. 결과로 필요한 개선을 피드백으로 준다. 매우 편리하다!
 
 ### 마치며
 
-Python으로 프로그래밍 할때, 많은 사람들은 기능을 보다 빠르게 구현하고자 하는 생각에 코드 품질에 대하여는 등한시 한다. 그러나 이 문서에서 설명한 또는 아직 다루지 못한 내용들은 develop-staging-test-deploy 순환주기에 일부분이다. 이는 프로젝트에 참여하는 모든 개발자들이 이해할 수있는 이점이 있으며, 디버거를 이용하여 코드를 깊이 이해하지 않고도 코드를 수정하는 작업을 수행 할 수 있다. 오픈 소스 프로젝트에 참여하여 기여하려면, PEP-8가 편리하다는 것을 알게 될 것이고 보편적인 표준이기 때문에 코드를 더 잘 이해할 수 있을 것이다. 대부분의 파이썬 개발자는 이를 따른다.
+Python으로 프로그래밍 할때, 많은 사람들은 기능을 보다 빠르게 구현하고자 하는 생각에 코드 품질에 대하여는 등한시 한다. 그러나 이 문서에서 설명하지 않았거나 아직 다루지 않았던 내용은 develop-staging-test-deploy 순환주기에 일부분이다. PEP-8은 프로젝트에 참여하는 모든 개발자들이 이해할 수 있다는 이점을 갖으며, 디버거를 이용하여 코드를 깊이 이해하지 않고도 코드를 수정하는 작업을 수행 할 수 있다. 나아가 오픈 소스 프로젝트에 참여하여 기여한다면, PEP-8가 편리하다는 것을 알게 될 것이고 보편적으로 준수하는 표준이기 때문에 코드를 더 잘 이해할 수 있을 것이다. 대부분의 파이썬 개발자는 이를 따른다.
 
 이제 PEP-8에 대한 간단한 설명을 끝냈다. [PEP-8](https://www.python.org/dev/peps/pep-0008/)을 직접 확인해 보도록 하자. 보다 많은 것을 배울 수 있을 것이다.
 
