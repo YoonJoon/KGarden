@@ -326,7 +326,7 @@ class OddOrEvenTestSuite(unittest.TestCase):
 
 [이 문서](http://kunststube.net/encoding/)는 인코딩에 대한 보다 자세한 내용을 기숧하고 있다.
 
-인코딩이 중요한 이유들어 보자. string은 Python에서 가장 보편적으로 사용되는 자료형(data type)중 하나이다. 표준 ASCII로 표현할 수 없는 문자를 포함하거나 이들로 만들어진 문자열(string)을 사용할 경우가 있을 수 있다. 결국, á, ž, ç 등과 같이 액센트 부호가 있는 문자가 있는 텍스트를 다루어야 하기 때문이다.
+인코딩이 중요한 이유로는 string은 Python에서 가장 보편적으로 사용되는 자료형(data type)중 하나이기 때문이다. 표준 ASCII로 표현할 수 없는 문자를 포함하거나 이들로 만들어진 문자열(string)을 사용하여야 할 경우, 예를 들면, á, ž, ç 등과 같이 액센트 부호가 있는 문자가 있는 텍스트를 다룰 수 있어야 하기 때문이다.
 
 Python3는 기본적인 코딩으로 UTF-8을 채택하고 있다. 그러나 Python 2에서는 ASCII이다.
 
@@ -344,7 +344,7 @@ Python3는 기본적인 코딩으로 UTF-8을 채택하고 있다. 그러나 Pyt
 Flügel
 ```
 
-print는 변수가 가리키는 값을 출력한다. ACII가 아닌 문자 ÃŒ 인코드되고, 문자열을 참조하면 \xfc로 표시된다. string 메소드 <code>.encode()</code>와 <code>.decode()</code>를 사용하여 이를 다룰 수 있다. <code>.encode()</code>는 이미 한 방법으로 인코딩되어 있는 Unicode 문자열을 8-비트 문자열로 변환하며 <code>.decode()</code>는 주어진 인코딩으로 문자열로 변환한다.
+print는 변수가 가리키는 값을 출력한다. ACII가 아닌 문자 ÃŒ 인코드 되고, 이를 문자열로 참조하면 \xfc로 표시된다. string 메소드 <code>.encode()</code>와 <code>.decode()</code>를 사용하여 이를 다룰 수 있다. <code>.encode()</code>는 이미 한 방법으로 인코딩되어 있는 Unicode 문자열을 8-비트 문자열로 변환하며, <code>.decode()</code>는 주어진 인코딩 문자열을 Unicode 문자열로 변환한다.
 
 <a name="import"></a>
 
