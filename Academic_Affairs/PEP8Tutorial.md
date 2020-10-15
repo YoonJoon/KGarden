@@ -370,7 +370,11 @@ Python 프로그래밍에서 라이브러리(library) 또는 모듈(module)을 �
   </tr>
 </table>
 
-라이브러리를 지정하기 위하여 import문을 사용할 때 지켜야 할 순서가 있다. 일반적으로 아래 순서를 따른다. 1. 표준 라이브러리 import문 2. 다른 커뮤니티에서 개발한 모듈/라이브러리 import문 3. 로컬 응용(application)/라이브러리 import문
+라이브러리를 지정하기 위하여 import문을 사용할 때 지켜야 할 순서가 있다. 일반적으로 아래 순서를 따른다. 
+
+1. 표준 라이브러리 import문 
+2. 다른 커뮤니티에서 개발한 모듈/라이브러리 import문 
+3. 로컬 응용(application)/라이브러리 import문
 
 #### 절대와 상대 import문 (Absolute and Relative Imports)
 
@@ -425,7 +429,7 @@ from scikit import *
 
 ### 주석(Comments)
 
-Python에서 코드내의 문서화를 위하여 주석을 사용한다. 주석을 통하여 코드를 보다 잘 이해할 수 있다. 작성한 모듈을 기술하기 위하여 주석과 docstrings와 같이 문서생성에 사용할 수 있는 도구들이 있다. 자세하게 주석을 작성하여 다른 사람들이 코드를 읽고 정확히 이해하고 다른 곳에서 어떻게 사용되고 있는 지를 알 수 있어야 한다.
+Python 코드에서 문서화를 위하여 주석을 사용한다. 주석을 통하여 코드를 보다 잘 이해할 수 있다. 작성한 모듈을 기술하기 위하여 주석과 docstrings와 같이 문서생성에 사용할 수 있는 도구들이 있다. 자세하게 주석을 작성하여 다른 사람들이 코드를 읽고 정확히 이해하고 다른 곳에서 어떻게 사용되고 있는 지를 알 수 있어야 한다.
 
 주석은 문자 "#"로 시작한다. 인터프리터는 해시태그(hashtag) 이후에 나타나는 문자들를 수행하지 않는다. 예를 들면, 아래 프로그램의 수행 결과이다
 
@@ -440,7 +444,9 @@ print("This is a Python comment")
 
 이전에 설명했듯이 주석은 한줄에 72자를 넘을 수 없다.
 
-주석을 3 방법으로 사용할 수 있다. - 블럭 주석(block comment)를 사용하여 다른 사람들에게 복잡하고 익숙하지 않은 코드를 설명할 수 있다. 긴(longer-form) 주석이 이에 해당되며, 일반적으로 주석 뒤에 나타나는 코드 일부분 또는 전체를 기술한다. 블럭 주석은 코드와 같은 수준(level)로 들여 쓰기를 한다. 블럭 주석의 각 행(line)은 #와 빈칸으로 시작한다. 주석이 한 문단 이상이면 "#"만 있는 빈 행으로 문단을 구분한다.
+3 방법으로 주석을 사용할 수 있다. 
+
+- 블럭 주석(block comment)를 사용하여 다른 사람들에게 복잡하고 익숙하지 않은 코드를 설명할 수 있다. 긴(longer-form) 주석이 이에 해당되며, 일반적으로 주석 뒤에 나타나는 코드 일부분 또는 전체를 기술한다. 블럭 주석은 코드와 같은 수준(level)로 들여 쓰기를 한다. 블럭 주석의 각 행(line)은 #와 빈칸으로 시작한다. 주석이 한 문단 이상이면 "#"만 있는 빈 행으로 문단을 구분한다.
 
 다음은 주석을 사용하는 예를 보이기 위하여 <code>scikit-learn</code> 라이브러리에서 발췌한 것이다.
 
@@ -454,7 +460,7 @@ print("This is a Python comment")
             X = X.copy('F')
 ```
 
--	인라인 주석이 코드의 일부분을 설명하는데 효과적이지만 그 사용을 아껴야 한다. 그러나 인라인 주석은 코드의 지정된 행이 무엇을 하는가를 기억하는 데에 도움을 줄 수 있으며 코드 전체 익숙하지 않은 개발자와 협업할 경우에도 편리할 수 있다. 인라인 주석은 코드에 이어 같은 행에 사용한다. 이 주석도 #와 빈칸으로 시작한다.
+- 인라인 주석은 코드의 일부분을 설명하는데 효과적이지만 그 사용을 아껴야 한다. 그러나 인라인 주석은 코드의 지정된 행이 무엇을 하는가를 기억하는 데에 도움을 줄 수 있으며 코드 전체 익숙하지 않은 개발자와 협업할 경우에는 편리할 수도 있다. 인라인 주석은 코드에 이어 같은 행에 사용한다. 이 주석도 #와 빈칸으로 시작한다.
 
 예를 들면
 
@@ -462,7 +468,7 @@ print("This is a Python comment")
  counter = 0  # initialize the counter
 ```
 
--	공개할 모듈 (public module), 파일, 클래스과 메소드 시작에 문서 문자열 또는 docstring을 작성한다. """로 시작하고 """로 맺는다.
+- 공개할 모듈 (public module), 파일, 클래스과 메소드 시작에 문서 문자열 또는 docstring을 작성한다. """로 시작하고 """로 맺는다.
 
 ```python
     """
@@ -499,9 +505,12 @@ import sys
 
 ### 명명 규칙 (Naming Conventions)
 
-Python으로 프로그램을 할 때 변수, 소스 코드와 문서에 있는 타입, 함수와 다른 엔터티들을 표기하는 식별자(identifier)로 사용하는 글자열(character sequence)를 만드는 규칙, 명명 규칙을 대부분 이용한다.
+Python 프로그램에서 변수, 소스 코드와 문서에 있는 타입, 함수와 다른 엔터티들을 표기하는 식별자(identifier)로 사용하는 글자열(character sequence)를 만드는 규칙, 즉 명명 규칙을 대부분 이용한다.
 
-특별한 명명 스타일을 규정하지 않았다면 아래와 같이 기술한 것을 고려해 보자. - b 또는 소문자 한 글자 - B 또는 대문자 한 글자 - lowercase - UPPERCASE - lower*case_with_underscore - UPPER_CASE_WITH_UNDERSCORE - CapWords, CamelCase 또는 StudlyCaps로 알려진 CapitalizedWords - mixedCase - Capitalized_Words_With_Underscores - \_single\_leading\_underscore: 약한(weak) "내부 사용(internal use)" 지시자. 예를 들면, <code>from M import \*</code>는 밑줄 글자로 시작하는 이름의 객체는 import하지 않는다. - single\_trailing\_underscore*: <code> Tkinter.Toplevel(master, class*='ClassName')</code>처럼 Python 키워드(keyword)와 충돌을 피하기 위한 규칙으로 사용한다. - *\_double\_leading\_underscore: 클래스 애트리뷰트(attribute)를 명명할때, 이름 맹글링(mangling)을 한다 (클래스 <code>FooBar</code>, <code>\_\_boo</code>는 <code>\_FooBar\_\_boo</code>가 된다). - \_\_double\_leading\_and\_trailing\_underscore: 사용자가 관장하는 namespace에 존재하는 <code>\_\_init\_\_</code>, <code>\_\_import\_\_</code> 또는 <code>\_\_file\_\_</code>와 같은 "magic" 객체 또는 애트리뷰트. 이같은 이름은 사용하지 말아야 하며 오직 문서화에서만 사용하여야 한다.
+특별한 명명 스타일을 규정하지 않았다면 아래와 같이 기술한 것을 고려해 보자. 
+
+- b 또는 소문자 한 글자 - B 또는 대문자 한 글자 
+- lowercase - UPPERCASE - lower*case_with_underscore - UPPER_CASE_WITH_UNDERSCORE - CapWords, CamelCase 또는 StudlyCaps로 알려진 CapitalizedWords - mixedCase - Capitalized_Words_With_Underscores - \_single\_leading\_underscore: 약한(weak) "내부 사용(internal use)" 지시자. 예를 들면, <code>from M import \*</code>는 밑줄 글자로 시작하는 이름의 객체는 import하지 않는다. - single\_trailing\_underscore*: <code> Tkinter.Toplevel(master, class*='ClassName')</code>처럼 Python 키워드(keyword)와 충돌을 피하기 위한 규칙으로 사용한다. - *\_double\_leading\_underscore: 클래스 애트리뷰트(attribute)를 명명할때, 이름 맹글링(mangling)을 한다 (클래스 <code>FooBar</code>, <code>\_\_boo</code>는 <code>\_FooBar\_\_boo</code>가 된다). - \_\_double\_leading\_and\_trailing\_underscore: 사용자가 관장하는 namespace에 존재하는 <code>\_\_init\_\_</code>, <code>\_\_import\_\_</code> 또는 <code>\_\_file\_\_</code>와 같은 "magic" 객체 또는 애트리뷰트. 이같은 이름은 사용하지 말아야 하며 오직 문서화에서만 사용하여야 한다.
 
 #### 통산적인 명명 규칙 (General Naming Conventions)
 
